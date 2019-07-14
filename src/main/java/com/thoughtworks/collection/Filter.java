@@ -20,14 +20,14 @@ public class Filter {
     }
 
     public List<Integer> filterMultipleOfThree() {
-        throw new NotImplementedException();
+        return array.stream().filter(n -> n % 3 == 0).collect(Collectors.toList());
     }
 
     public List<Integer> getCommonElements(List<Integer> firstList, List<Integer> secondList) {
-        throw new NotImplementedException();
+        return firstList.stream().filter(n -> secondList.contains(n)).collect(Collectors.toList());
     }
 
     public List<Integer> getDifferentElements() {
-        throw new NotImplementedException();
+
     }
 }
